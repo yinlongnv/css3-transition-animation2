@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>css3实现网页平滑过渡效果</title>
+    <meta name="description" content="css3实现网页平滑过渡效果">
+    <meta name="keywords" content="css3,transition,animation">
+    <!-- 强制网页适应窗口大小变化（即自适应），且不允许用户缩放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 告诉IE使用新的渲染模式，防止低版本浏览器不支持 -->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="container">
+      <div class="st-container">
+        <!-- 导航栏开始 -->
+        <input type="radio" name="radio-set" id="st-control-1" checked>
+        <a href="#st-panel-1">First</a>
+        <input type="radio" name="radio-set" id="st-control-2">
+        <a href="#st-panel-2">Second</a>
+        <input type="radio" name="radio-set" id="st-control-3">
+        <a href="#st-panel-3">Third</a>
+        <input type="radio" name="radio-set" id="st-control-4">
+        <a href="#st-panel-4">Forth</a>
+        <input type="radio" name="radio-set" id="st-control-5">
+        <a href="#st-panel-5">Fifth</a>
+        <!-- 导航栏结束 -->
+
+        <!-- 内容开始 -->
+        <div class="st-scroll">
+          <section class="st-panel" id="st-panel-1">
+            <div class="st-desc" data-icon="H"></div>
+            <h2>First</h2>
+            <p>First First First FirstFirst First First First First First FirstFirst First</p>
+          </section>
+
+          <section class="st-panel st-color" id="st-panel-2">
+            <div class="st-desc" data-icon="2"></div>
+            <h2>Second</h2>
+            <p>Second Second Second SecondSecond Second Second Second Second Second SecondSecond Second</p>
+          </section>
+
+          <section class="st-panel" id="st-panel-3">
+            <div class="st-desc" data-icon="B"></div>
+            <h2>Third</h2>
+            <p>Third Third Third ThirdThird Third Third Third Third Third ThirdThird Third</p>
+          </section>
+
+          <section class="st-panel st-color" id="st-panel-4">
+            <div class="st-desc" data-icon="x"></div>
+            <h2>Forth</h2>
+            <p>Forth Forth Forth ForthForth Forth Forth Forth Forth Forth ForthForth Forth</p>
+          </section>
+
+          <section class="st-panel" id="st-panel-5">
+            <div class="st-desc" data-icon="C"></div>
+            <h2>Fifth</h2>
+            <p>Fifth Fifth Fifth FifthFifth Fifth Fifth Fifth Fifth Fifth FifthFifth Fifth</p>
+          </section>
+          <!-- 内容结束 -->
+          
+        </div>
+      </div>
+    </div>
+    <script src="" async defer></script>
+  </body>
+</html>
